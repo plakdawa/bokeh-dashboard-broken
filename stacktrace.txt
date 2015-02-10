@@ -1,0 +1,79 @@
+D:\>c:\Anaconda\Scripts\bokeh-server.exe -d --script dashboard.py
+adding  to python path
+importing dashboard.py
+2015-02-09 16:36:24,875:DEBUG:bokeh.server.zmqpub:zmqpub starting: inproc://bokeh_in
+2015-02-09 16:36:24,875:DEBUG:bokeh.server.zmqsub:SUB CONNECT: inproc://bokeh_out
+2015-02-09 16:36:40,783:INFO:bokeh.server.models.docs:num models: 1
+2015-02-09 16:36:41,029:DEBUG:_bokeh_app:get_cloudname(): Entered
+2015-02-09 16:36:41,029:INFO:_bokeh_app:Request for cloudname den8
+2015-02-09 16:36:41,030:DEBUG:_bokeh_app:get_smoketests_data(): Entered
+2015-02-09 16:36:41,030:INFO:_bokeh_app:CSV file for smoketests data will be .\den8.current
+2015-02-09 16:36:41,049:DEBUG:_bokeh_app:DashboardApp.create(): Entered
+2015-02-09 16:36:41,049:DEBUG:_bokeh_app:DashboardApp.setup_events(): Entered
+2015-02-09 16:36:41,049:DEBUG:_bokeh_app:DashboardApp.make_source(): Entered
+2015-02-09 16:36:41,052:DEBUG:_bokeh_app:DashboardApp.set_dates(): Entered
+2015-02-09 16:36:41,052:DEBUG:_bokeh_app:datetime_min=2015-02-03 07:15:00
+2015-02-09 16:36:41,052:DEBUG:_bokeh_app:datetime_max=2015-02-05 18:00:00
+2015-02-09 16:36:41,052:DEBUG:_bokeh_app:DashboardApp.make_date_pickers(): Entered
+2015-02-09 16:36:41,053:DEBUG:_bokeh_app:DashboardApp.make_smoketests_run_time_plot(): Entered
+2015-02-09 16:36:41,059:DEBUG:bokeh.plotting:returning config from flask request
+2015-02-09 16:36:41,059:DEBUG:bokeh.plotting:returning config from flask request
+2015-02-09 16:36:41,062:DEBUG:_bokeh_app:DashboardApp.make_smoketests_results_plot(): Entered
+2015-02-09 16:36:41,069:DEBUG:bokeh.plotting:returning config from flask request
+2015-02-09 16:36:41,069:DEBUG:bokeh.plotting:returning config from flask request
+2015-02-09 16:36:41,078:DEBUG:_bokeh_app:DashboardApp.make_children(): Entered
+2015-02-09 16:36:41,226:INFO:tornado.access:200 GET /dashboard/?cloudname=den8 (127.0.0.1) 455.00ms
+2015-02-09 16:36:41,630:INFO:tornado.access:304 GET /bokehjs/static/js/bokeh.js (127.0.0.1) 363.00ms
+2015-02-09 16:36:41,640:INFO:tornado.access:304 GET /static/bootstrap/css/bootstrap.min.css (127.0.0.1) 9.00ms
+2015-02-09 16:36:41,651:INFO:tornado.access:304 GET /static/bootstrap/js/bootstrap.min.js (127.0.0.1) 12.00ms
+2015-02-09 16:36:41,661:INFO:tornado.access:304 GET /bokehjs/static/css/bokeh.css (127.0.0.1) 9.00ms
+2015-02-09 16:36:41,667:INFO:tornado.access:200 GET /bokeh/jsgenerate/HBox/DashboardApp/DashboardApp (127.0.0.1) 5.00ms 2015-02-09 16:36:41,677:INFO:tornado.access:304 GET /static/jquery.min.js (127.0.0.1) 10.00ms
+2015-02-09 16:36:42,052:INFO:tornado.access:200 GET /bokeh/wsurl/ (127.0.0.1) 1.00ms
+2015-02-09 16:36:42,115:ERROR:tornado.application:Uncaught exception GET /bokeh/objinfo/4b0c9bdc-3321-4eae-8682-030eb03b3dd7/16a0760d-de14-4110-a3d5-8e87fbb98e06 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:5006', method='GET', uri='/bokeh/objinfo/4b0c9bdc-3321-4eae-8682-030eb03b3dd7/16a0760d-de14-4110-a3d5-8e87fbb98e06', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': 'localhost:5006', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5006/dashboard/?cloudname=den8', 'X-Requested-With': 'XMLHttpRequest'})
+Traceback (most recent call last):
+  File "c:\Anaconda\lib\site-packages\tornado\web.py", line 1309, in _execute
+    result = self.prepare()
+  File "c:\Anaconda\lib\site-packages\tornado\web.py", line 2498, in prepare
+    self.fallback(self.request)
+  File "c:\Anaconda\lib\site-packages\tornado\wsgi.py", line 280, in __call__
+    WSGIContainer.environ(request), start_response)
+  File "c:\Anaconda\lib\site-packages\flask\app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Anaconda\lib\site-packages\flask\app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "c:\Anaconda\lib\site-packages\flask\app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\Anaconda\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Anaconda\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Anaconda\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\Anaconda\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Anaconda\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Anaconda\lib\site-packages\bokeh\server\crossdomain.py", line 33, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "c:\Anaconda\lib\site-packages\bokeh\server\views\bbauth.py", line 14, in wrapper
+    return func(docid, *args, **kwargs)
+  File "c:\Anaconda\lib\site-packages\bokeh\server\views\main.py", line 234, in get_bokeh_info_one_object
+    clientdoc = bokeh_app.backbone_storage.get_document(docid)
+  File "c:\Anaconda\lib\site-packages\bokeh\server\serverbb.py", line 87, in get_document
+    doc = Document(json_objs)
+  File "c:\Anaconda\lib\site-packages\bokeh\document.py", line 42, in __init__
+    self.load(*json_objs, dirty=False)
+  File "c:\Anaconda\lib\site-packages\bokeh\document.py", line 220, in load
+    model = cls.load_json(obj_attrs)
+  File "c:\Anaconda\lib\site-packages\bokeh\plot_object.py", line 160, in load_json
+    instance.update(**attrs)
+  File "c:\Anaconda\lib\site-packages\bokeh\plot_object.py", line 273, in update
+    setattr(self, k, v)
+  File "c:\Anaconda\lib\site-packages\bokeh\properties.py", line 542, in __setattr__
+    super(HasProps, self).__setattr__(name, value)
+  File "c:\Anaconda\lib\site-packages\bokeh\properties.py", line 129, in __set__
+    raise e
+ValueError: Expected a datetime instance, got 1422947700000.0
+2015-02-09 16:36:42,115:ERROR:tornado.access:500 GET /bokeh/objinfo/4b0c9bdc-3321-4eae-8682-030eb03b3dd7/16a0760d-de14-4110-a3d5-8e87fbb98e06 (127.0.0.1) 53.00ms
+2015-02-09 16:36:42,444:DEBUG:bokeh.server.wsmanager:add socket f7ff93ae-4ae3-4951-b994-39f7dabbd4b8
